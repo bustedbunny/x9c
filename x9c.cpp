@@ -5,15 +5,15 @@ x9c::x9c() {
 }
 
 void x9c::_dsSave(){
-	digitalWrite(_inc,HIGH);          //***********GADGET REBOOT CHANGED******************
-	delayMicroseconds(1);             //***********GADGET REBOOT CHANGED******************
-	digitalWrite(_cs,HIGH);             // unselect chip and write current value to NVRAM
+	digitalWrite(_inc,HIGH);      
+	delayMicroseconds(1);            
+	digitalWrite(_cs,HIGH);           
 	delay(20);
 }
 
 void x9c::_dsNoSave(){
-	digitalWrite(_cs,HIGH);             // unselect chip
-	digitalWrite(_inc,HIGH);            // always leave inc high - makes coding cleaner / easier
+	digitalWrite(_cs,HIGH);       
+	digitalWrite(_inc,HIGH);          
 	delayMicroseconds(1);
 }
 
