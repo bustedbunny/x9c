@@ -1,5 +1,5 @@
 # x9c
-Simple, foolproof library for x9c potentiometers.
+Simple, foolproof Arduino IDE library for x9c potentiometers.
 All required code for it to work:
 
 #include <x9c.h>
