@@ -1,16 +1,9 @@
 
 #ifndef x9c_h
 #define x9c_h
-//
-// direction "sense" is set between Vh/Rh (pin 3) and Vw/Rw (pin 5) i.e. with x9c104,
-//		setPotMin will give abt 220R - 330R between these pins
-//      setPotMax should give abt 100k
-//
+
 #include <Arduino.h>
 
-//
-// stepPot explicilty does NOT save to NVRAM - allows reboot to old NVRAM value, with minor runtime tweaks
-//
 class x9c {
 public:
 	x9c();
