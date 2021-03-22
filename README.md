@@ -3,6 +3,7 @@ Simple, foolproof library for x9c potentiometers.
 All required code for it to work:
 
 #include <x9c.h>
+
 x9c name; 
 
 name.begin(CS, INC, UD, startposition);
