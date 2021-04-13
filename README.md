@@ -2,18 +2,18 @@
 Simple, foolproof Arduino IDE library for x9c potentiometers.
 All required code for it to work:
 
-#include <x9c.h>
+`#include <x9c.h>`
 
-x9c name; 
+`x9c name; `
 
-name.begin(CS, INC, UD, startposition);
+`name.begin(CS, INC, UD, startposition);`
 
-// Assigns pin numbers to functions and moves wiper to startposition (optional, default value = 0).
+Assigns pin numbers to functions and moves wiper to startposition (optional, default value = 0).
 
-pot.setPot(value);
+`pot.setPot(value);`
 
-// Moves wiper of potentiometer to "value" position [0 - 99].
+Moves wiper of potentiometer to "value" position [0 - 99].
 
-pot.PotPos();
+`pot.PotPos();`
 
-// Returns current value of potentiometer.
+Returns current value of potentiometer.
