@@ -22,7 +22,7 @@ void x9c::setPot(uint8_t pos){
 	}
 	digitalWrite(_cs, LOW);
 	delayMicroseconds(1);
-	uint8_t count = pos > 99 ? (count = 99):pos;
+	uint8_t count = pos > 99 ? 99:pos;
 	if (count > _pos) {
 		digitalWrite(_ud, HIGH);
 		while (count != _pos) {
